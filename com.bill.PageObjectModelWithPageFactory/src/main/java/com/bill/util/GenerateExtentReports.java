@@ -19,7 +19,7 @@ public class GenerateExtentReports {
 			
 			Date d=new Date();
 			String fileName=d.toString().replaceAll(":","_").replace(" ", "_")+".html";
-			String reportPath=(System.getProperty("user.dir")+"\\Reports\\")+fileName;
+			String reportPath=(System.getProperty("user.dir")+"\\target\\ExtentsReports\\")+fileName;
 			
 			htmlReporter=new ExtentHtmlReporter(new File(reportPath));
 			htmlReporter.loadXMLConfig(new File(System.getProperty("user.dir")+"\\ReportsConfig.xml"));
