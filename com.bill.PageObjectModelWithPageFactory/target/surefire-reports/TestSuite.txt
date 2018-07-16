@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.703 sec <<< FAILURE!
+loginTest(com.bill.pom.tests.LoginTest)  Time elapsed: 33.763 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.InstantiationException: com.bil.pom.pages.LandingPage
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:134)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at com.bil.pom.pages.LoginPage.gotoLoginPage(LoginPage.java:46)
+	at com.bill.pom.tests.LoginTest.loginTest(LoginTest.java:22)
+Caused by: java.lang.InstantiationException: com.bil.pom.pages.LandingPage
+	at java.base/java.lang.Class.newInstance(Class.java:547)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	... 38 more
+Caused by: java.lang.NoSuchMethodException: com.bil.pom.pages.LandingPage.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3302)
+	at java.base/java.lang.Class.newInstance(Class.java:532)
+	... 39 more
+
